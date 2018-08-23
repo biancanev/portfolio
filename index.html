@@ -15,6 +15,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-dark-grey w3-hover-text-white">Work Experience</a>
   <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-dark-grey w3-hover-text-white">Education</a>
   <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-dark-grey w3-hover-text-white">Hobbies</a>
+  <input type="text" placeholder="Search Something..." id="search_input" onkeypress="checkEnter(event)">
   <div class="w3-dropdown-hover">
     <button class="w3-button w3-text-dark-grey">Websites<i class="fa fa-caret-down"></i></button>
     <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -34,6 +35,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <p>Support me on <a href="">Patreon</a></p>
       </div>
     </div>
+  </div>
+  <div style="visibility:hidden;" id="search_box">
+    <h4>Search Results</h4>
+    <p id="result"></p>
   </div>
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -183,6 +188,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <p>Find me on social media. Or visit <a href="http://thepotatoplace.ga" title="The Potato Place">The Potato Place</a>!</p>
   <a href="https://instagram.com/profile/@biancano"><i class="fa fa-instagram w3-hover-opacity"></i></a>
 </footer>
-
+<script>
+function checkEnter(event) {
+    var x = event.keyCode;
+    if (x == 13) {
+        var x = document.getElementById("search_input");
+        x.visibility = "hidden";
+        var value = x.value;
+        if(value.includes("potato") == true || value.includes("place")){
+          document.getElementById("search_result").style.visibility = "visible";
+          document.getElemntById("result").innerHTML = "<a href='http://thepotatoplace.ga'>The Potato Place</a>";
+        }
+      if(value.includes("Music") || value.includes("CMusic")){
+        document.getElementById("search_result").style.visibility = "visible";
+          document.getElementById("result").innerHTML = "<a href='http://cmusic.ml'>CMusic</a>"
+      }
+    }
+}
+  </script>
 </body>
 </html>
