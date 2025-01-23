@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Portfolio</title>
+    <link href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Montserrat, sans-serif;
+        }
+        .intro {
+            height: 100vh;
+            background: url('https://media.invisioncic.com/p313717/monthly_2023_01/Black-Triangles.gif.741b42f32b833622dc82c8f48ab958ac.gif') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .intro h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .section-title {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .project-card {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ryan's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <div class="intro">
+        <h1>Hi, I'm Ryan!</h1>
+        <button class="btn btn-secondary" style="margin-top:100px">
+          Resume <i class="icon bi-download"></i>
+        </button>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container py-5">
+            <h2 class="section-title">About Me</h2>
+            <p>With a strong foundation in problem-solving and technical innovation, I thrive on designing and developing solutions that merge hardware and software. From building designing PCBs
+              to creating AI-driven applications, my projects reflect my dedication to tackling real-world challenges. Outside of academics, I enjoy exploring emerging technologies and continuously expanding
+              my skill set. Feel free to <a href="#contact">reach out</a>!
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container py-5">
+            <h2 class="section-title">Education</h2>
+            <ul class="list-unstyled">
+                <li><strong>UC Berkeley</strong> (2024 - Present) - Bachelor of Science in Electrical Engineering and Computer Sciences</li><Br>
+                <li><strong>Diablo Valley College</strong> (2022 - 2024) - Associate of Science in Computer Science</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container py-5">
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 project-card">
+                    <div class="card bg-dark text-white">
+                        <img src="./path-to-preview1.jpg" class="card-img-top" alt="N-Body Preview">
+                        <div class="card-body">
+                            <h5 class="card-title">N-Body Simulator</h5>
+                            <p class="card-text">This physcs-based Python script incorporates numeric integration methods to simulate the motion of the 3 body problem, and can scale all the way
+                              to an arbitrary number, n, bodies. The program has a fully functional GUI that allows the user to change simulation variables such as the gravitational constant
+                              and the numeric time step to explore how these parameters factor into the simulation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-card">
+                    <div class="card bg-dark text-white">
+                        <img src="./path-to-preview2.jpg" class="card-img-top" alt="Audio Amplifier Preview">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Audio Amplifier</h5>
+                            <p class="card-text">A brief description of the project goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-card">
+                    <div class="card bg-dark text-white">
+                        <img src="./path-to-preview3.jpg" class="card-img-top" alt="Hand Tracker Preview">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Tracking Model</h5>
+                            <p class="card-text">A brief description of the project goes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="contact-section">
+      <div class="container text-center" style="padding-bottom:20px">
+          <h2 class="section-title">Contact</h2>
+          <p>Feel free to reach out to me via the platforms below:</p>
+          <div class="d-flex justify-content-center mt-4">
+              <a href="mailto:ryan.kwong.04@berkeley.edu" class="me-4" style="color:white">
+                  <i class="icon bi-envelope"></i> Email
+              </a>
+              <a href="https://www.linkedin.com/in/ryan-kwong-3773281bb/" class="me-4" target="_blank" style="color:white">
+                  <i class="icon bi-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/biancanev" target="_blank" style="color:white">
+                  <i class="icon bi-github"></i> GitHub
+              </a>
+          </div>
+      </div>
+  </section>
+  <script src="assets/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
