@@ -20,3 +20,7 @@
     transform: translateY(0);
     animation: slideIn 0.5s ease-out;
 }
+
+.contact a{
+    color: white
+}

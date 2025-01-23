@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan's Portfolio</title>
-    <link href="assets/style.css">
+    <link href="./assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         body {
             background-color: #121212;
@@ -61,9 +61,9 @@
     <!-- Introduction Section -->
     <div class="intro">
         <h1>Hi, I'm Ryan!</h1>
-        <button class="btn btn-secondary" style="margin-top:100px">
+        <a href="./assets/Resume_Berkeley_CS.pdf" class="btn btn-secondary" style="margin-top:100px" download="./assets/Resume_Berkeley_CS.pdf">
           Resume <i class="icon bi-download"></i>
-        </button>
+        </a>
     </div>
 
     <!-- About Me Section -->
@@ -72,7 +72,7 @@
             <h2 class="section-title">About Me</h2>
             <p>With a strong foundation in problem-solving and technical innovation, I thrive on designing and developing solutions that merge hardware and software. From building designing PCBs
               to creating AI-driven applications, my projects reflect my dedication to tackling real-world challenges. Outside of academics, I enjoy exploring emerging technologies and continuously expanding
-              my skill set. Feel free to <a href="#contact">reach out</a>!
+              my skill set. I am looking to make an impact; feel free to <a href="#contact">reach out</a>!
             </p>
         </div>
     </section>
@@ -95,12 +95,13 @@
             <div class="row">
                 <div class="col-md-4 project-card">
                     <div class="card bg-dark text-white">
-                        <img src="./path-to-preview1.jpg" class="card-img-top" alt="N-Body Preview">
+                        <img src="https://biancanev.github.io/portfolio/web/assets/3Body.png" class="card-img-top" alt="N-Body Preview">
                         <div class="card-body">
                             <h5 class="card-title">N-Body Simulator</h5>
+                            <h6><span class="badge badge-info">Python</span> <span class="badge badge-info">Data Structures</span> <span class="badge badge-info">OOP</span> <span class="badge badge-info">Physics</span></h6>
                             <p class="card-text">This physcs-based Python script incorporates numeric integration methods to simulate the motion of the 3 body problem, and can scale all the way
                               to an arbitrary number, n, bodies. The program has a fully functional GUI that allows the user to change simulation variables such as the gravitational constant
-                              and the numeric time step to explore how these parameters factor into the simulation.
+                              and the numeric time step to explore how these parameters factor into the simulation. See more at the <a href="">Github</a>.
                             </p>
                         </div>
                     </div>
@@ -110,6 +111,7 @@
                         <img src="./path-to-preview2.jpg" class="card-img-top" alt="Audio Amplifier Preview">
                         <div class="card-body">
                             <h5 class="card-title">Custom Audio Amplifier</h5>
+                            <h6><span class="badge badge-info">Circuits</span> <span class="badge badge-info">PCB Design</span> <span class="badge badge-info">SPICE</span></h6>
                             <p class="card-text">A brief description of the project goes here.</p>
                         </div>
                     </div>
@@ -119,7 +121,8 @@
                         <img src="./path-to-preview3.jpg" class="card-img-top" alt="Hand Tracker Preview">
                         <div class="card-body">
                             <h5 class="card-title">Hand Tracking Model</h5>
-                            <p class="card-text">A brief description of the project goes here.</p>
+                            <h6><span class="badge badge-info">AI</span> <span class="badge badge-info">Machine Learning</span> <span class="badge badge-info">Python</span></h6>
+                            <p class="card-text">This Python AI model uses Tensorflow and OpenCV </p>
                         </div>
                     </div>
                 </div>
@@ -133,19 +136,19 @@
           <h2 class="section-title">Contact</h2>
           <p>Feel free to reach out to me via the platforms below:</p>
           <div class="d-flex justify-content-center mt-4">
-              <a href="mailto:ryan.kwong.04@berkeley.edu" class="me-4" style="color:white">
+              <a href="mailto:ryan.kwong.04@berkeley.edu" class="me-4" style="padding-right:15px">
                   <i class="icon bi-envelope"></i> Email
               </a>
-              <a href="https://www.linkedin.com/in/ryan-kwong-3773281bb/" class="me-4" target="_blank" style="color:white">
+              <a href="https://www.linkedin.com/in/ryan-kwong-3773281bb/" class="me-4" target="_blank" style="padding-right:15px">
                   <i class="icon bi-linkedin"></i> LinkedIn
               </a>
-              <a href="https://github.com/biancanev" target="_blank" style="color:white">
+              <a href="https://github.com/biancanev" target="_blank">
                   <i class="icon bi-github"></i> GitHub
               </a>
           </div>
       </div>
   </section>
-  <script src="assets/script.js"></script>
+  <script src="./assets/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
