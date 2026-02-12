@@ -175,13 +175,14 @@
                 </div>
                 <div class="col-md-4 project-card">
                     <div class="card bg-dark text-white">
-                        <img src="./path-to-preview3.jpg" class="card-img-top" alt="Hand Tracker Preview">
+                        <img src="./assets/Asic_pipeline_v2.png" class="card-img-top" alt="Hand Tracker Preview">
                         <div class="card-body">
-                            <h5 class="card-title">Hand Tracking Model</h5>
-                            <h6><span class="badge badge-info">AI</span> <span class="badge badge-info">Machine Learning</span> <span class="badge badge-info">Python</span></h6>
-                            <p class="card-text">This Python AI model uses Tensorflow and OpenCV to detect and classify 18 different hand signals. This program includes
-                              an interface that can actively detect hand signals based on a camera feed. This model can discern between very similar looking hand gesutres.
-                            See the full description of the project on the <a href="https://github.com/biancanev/HandTracker">Github</a>.
+                            <h5 class="card-title">Custom RISC-V CPU</h5>
+                            <h6><span class="badge badge-info">RTL</span> <span class="badge badge-info">Digital Design</span> <span class="badge badge-info">Verilog</span></h6>
+                            <p class="card-text">This project implements a 3-stage pipelined RISC-V processor (Fetch/Decode → Execute → Memory/Writeback) supporting the complete 
+                                RV32I instruction set with data forwarding networks to resolve hazards between pipeline stages. The processor integrates with separate 4KB direct-mapped 
+                                write-back instruction and data caches that interface with external memory through a multi-cycle FSM-based controller handling cache hits, misses, and dirty 
+                                line evictions. This design is fully synthesized with place-and-route for ASIC implementations and hardware verified via synthesis to FPGA.
                             </p>
                         </div>
                     </div>
